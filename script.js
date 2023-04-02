@@ -6,6 +6,14 @@ const gameBoard = (function() {
         if(pos < this.maxSize)
             this.board[pos] = mark;
     }
+    isFull() {
+        for(let i = 0; i < maxSize; i++) {
+            if(this.board[i] == null)
+                return false;
+            else
+                return true;
+        }
+    }
 
     return  {
         updateBoard
