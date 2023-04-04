@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500&display=swap');
+
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.board {
+    display: grid;
+    background-color: rgb(179, 179, 179);
+    width: 40vw;
+    aspect-ratio: 1 / 1;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    
+    margin: auto;
+    border: 1px solid black;
+}
+
+.square {
+    border: 1px solid black;
+
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15rem;
+    font-weight: 500;
+    line-height: 1;
+}
