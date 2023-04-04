@@ -1,3 +1,4 @@
+// Game board module which tracks the marks on the board and updates it when needed
 const gameBoard = (function() {
     let board = []
     board = [];
@@ -16,6 +17,7 @@ const gameBoard = (function() {
     }
 })();
 
+// Module to control the display on webpage. 
 const displayController = (function() {
     let mark = '';
     let squares;
@@ -46,6 +48,7 @@ const displayController = (function() {
 
 })();
 
+// Factory function to create player objects 
 const player = function(number, mark) {
     let score;
     function setScore() {
