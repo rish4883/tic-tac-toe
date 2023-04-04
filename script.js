@@ -2,17 +2,17 @@ const gameBoard = (function() {
     let board = []
     board = [];
     const maxSize = 9;
-    updateBoard(mark, pos) {
+   function updateBoard(mark, pos) {
         if(pos < this.maxSize)
             this.board[pos] = mark;
     }
-    checkIfOccupied(pos) {
+    function checkIfOccupied(pos) {
         return this.board[pos] != null;
     }
 
     return  {
         updateBoard,
-        isFull
+        checkIfOccupied
     }
 })();
 
@@ -38,7 +38,24 @@ const displayController = (function() {
             square.textContent = '';
         });
     }
+
     
+
 
 })();
 
+const player = function(number, mark) {
+    let score;
+    function setScore() {
+        this.score++;
+    }
+
+    function getScore() {
+        return this.score;
+    }
+
+    return {
+        setScore,
+        getScore
+    }
+}
