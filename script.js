@@ -6,13 +6,8 @@ const gameBoard = (function() {
         if(pos < this.maxSize)
             this.board[pos] = mark;
     }
-    isFull() {
-        for(let i = 0; i < maxSize; i++) {
-            if(this.board[i] == null)
-                return false;
-            else
-                return true;
-        }
+    checkIfOccupied(pos) {
+        return this.board[pos] != null;
     }
 
     return  {
@@ -22,5 +17,21 @@ const gameBoard = (function() {
 })();
 
 const displayController = (function() {
-    
+    let mark = '';
+    let squares;
+
+    function init() {
+        squares = document.querySelectorAll('.square');
+        squares.forEach((square) => {
+            square.addEventListener('click', (e) => {
+                // if(gameBoard.checkIfOccupied) {return;}
+                // updateMark();
+                // e.target.textContent = this.mark;
+                // let index = e.target.id;
+                // gameBoard.updateBoard(this.mark, index);
+            });
+        });
+    }
+
 })();
+
