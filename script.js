@@ -16,7 +16,11 @@ const gameBoard = (function() {
     }
 
     return  {
-        updateBoard
+        updateBoard,
+        isFull
     }
 })();
 
+const displayController = (function() {
+    
+})();
