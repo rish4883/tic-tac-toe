@@ -39,8 +39,10 @@ const displayController = (function() {
         });
     }
 
-    
-
+    return {
+        init,
+        clear
+    }
 
 })();
 
