@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500&display=swap');
 
-
+body{
+    background-color: #121212;
+}
 .heading {
     text-align: center;
     text-decoration: underline;
+    color: rgb(192, 192, 192);
     
 }
 
 .board {
     display: grid;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(255, 255, 255, 0.15);
     width: 40vw;
     aspect-ratio: 1 / 1;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(192, 192, 192);
 }
 
 .square {
-    border: 1px solid black;
-
+    border: 1px solid rgb(192, 192, 192);
     text-align: center;
 
     font-family: 'Montserrat', sans-serif;
