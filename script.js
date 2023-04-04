@@ -33,5 +33,12 @@ const displayController = (function() {
         });
     }
 
+    function clear() {
+        squares.forEach( (square) => {
+            square.textContent = '';
+        });
+    }
+    
+
 })();
 
